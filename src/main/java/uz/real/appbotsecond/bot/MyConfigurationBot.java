@@ -187,7 +187,7 @@ public class MyConfigurationBot extends TelegramLongPollingBot {
         }
     }
 
-    @Scheduled(cron = "0 55 23 * * *")
+    @Scheduled(cron = "0 0 0 * * *")
     private void budilnik() {
         LocalDate localDate = LocalDate.now();
         int month = localDate.getMonthValue();
